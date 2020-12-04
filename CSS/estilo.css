@@ -1,0 +1,129 @@
+/*Definindo variáveis p os itens que mais se utiliza no site*/
+:root{
+--vermelho:#E50914;
+--preta:#141414;	
+}
+
+/*Reset nos elementos da página*/
+*{
+	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/*Elementos base */
+
+
+body {
+	background:var(--preta);
+	font-family:'Arial', 'Times New Roman', Times, serif;
+	/*pode-se usar fontes externas: https://fonts.google.com/*/
+	color:white;
+	
+}
+header .container{
+/* display:flex posiciona todos os elementos do container em linha
+tem por padrão: flex-direction:row; (ainda q n seja digitado assume
+esse valor*/
+display:flex;
+align-items:center;
+
+/*o seletor abaixo vai aplicar um espaço entre todos os elementos 
+desde a tag h2 até o últomo elemento a*/
+justify-content:space-between;
+
+/*Usamos o TMDB para buscar info sobre filmes */
+	
+}
+
+
+header .logo{
+	/*margin-left:5px;*/
+	/*para "desgrudar o logo dos demais elementos foi aplicado 
+	o code acima"*/
+	
+	color: var(--vermelho);
+	font-family: 'Arial Black';
+	font-size: 40px;
+}
+
+header nav a{
+	text-decoration:none;
+	color:#AAA;
+	margin-right:10px;
+}
+
+header nav a:hover{
+	color:#fff;
+}
+
+/*- Formatação Filme principal*/
+
+ .filme-principal{
+	font-size: 16px;
+		
+	background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)100%), url("../img/capa.jpg")no-repeat;
+	/*o background como mostrado acima permite clarear um pouco o fundo preto da imgem p facilitar a visualização do texto que está c cor branco
+	pode se fazer ao contrário qdo o fundo for branco*/
+	
+	height: 400px; /*definindo a altura da caixa*/
+	
+	/*background-size:cover; definindo a cobertura da cx c a imagem
+	eu deixei comentado pq minha imagem ficou distorcida aplicando 
+	esse recuros, ou seja é necessário selecionar bem a imgagem de fundo*/
+	
+	display: flex; /* essa propriedade sempre mostra os elementos em linha*/
+	flex-direction: column;
+	justify-content: center;/*essa propriedade tem por padrão seguir a direção do flex direction*/
+	align-items: flex-start;
+}
+
+.filme-principal .descricao{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+	margin-top: 15%;
+	font-size:40px;
+	font-family: 'Trebuchet ms', 'lucida sans unicode';
+}
+
+
+.botao{
+	background-color: rgba(0,0,0,.50);
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	margin-right:15px;
+	font-size: 12px;
+	cursor:pointer;/*para melhorar a identificação do botão qdo pasar o mouse*/
+	transition: 3s ease all ;/*configura a animação semelhante ao power point*/
+	
+	}
+.botao:hover{
+background-color:white;
+color:black;
+}
+
+.botao i{
+	margin-right: 8px;
+}
+.container{
+	margin-left: 20px;
+}
+
+.filme-principal .container{
+	width: 70%;
+}
+
+.box-filme {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.carrosel-filmes{
+	margin-top:5px;
+}
+

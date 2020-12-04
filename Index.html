@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="eng">
+<head>
+	<title>My NetFlix</title>
+	<meta charset="utf-8">
+	<meta nome="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Stylesheet" href="css/estilo.css">
+	
+	<!-- configurar a responsividade-->
+	<link rel="Stylesheet" href="css/responsive.css">
+	
+	<!--arquivos do owl -->
+	<link rel="Stylesheet" href="css/owl.carousel.min.css">
+	<link rel="Stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- /*fonte awesome permite criar ícones dentro do html sem precisar 
+	ter essas imagens. É um arq JS basta fazer referência*/ -->
+	<script src="https://kit.fontawesome.com/1dcfa88280.js" crossorigin="anonymous"></script>
+
+	<!-- scripts do carrossel -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/setup.js"></script>
+	
+</head>
+<body>
+<header>
+	<div class="container">
+		<h2 class="logo">NETFLIX</h2>
+		<nav> 
+			<a href="#">Início</a>
+			<a href="#">Séries</a>
+			<a href="#">Filmes</a>
+			<a href="#">Documentários</a>
+		</nav> 
+	</div>
+</header>
+<main>
+<!--            A tag MAIN tem uma única função semântica: definir o conteúdo principal da página ou da aplicação            -->
+	<div class="filme-principal">
+		<div class="container">
+			<h3 class="titulo">Como defender um assassino</h3>
+			<p class="descricao">A história conta sobre um grupo de ambiciosos estudantes de Direito e sua brilhante e misteriosa professora <br/></p>
+						
+			<div class="botoes">
+				<button role="button" class="botao">
+				<i class="fas fa-play"></i>
+					Assistir Agora
+				</button>
+				<button role="button" class="botao"><!-- Com essa semântica os navegadores passam a conhecer o papel dos elementos no documento-->
+				<i class="fas fa-info-circle"></i>
+					Mais informações
+				</button>
+			</div>
+		</div>
+		
+	</div>
+</main>
+
+<!-- falta verificar pq o carrossel n rodou-->
+<div class="carrosel-filmes">
+	<div class="owl-carousel owl-theme">
+		<div class="item">
+			<img class="box-filme" src="img/grey.jpg" alt="Anatomia da Grey" srcset="">
+		</div>
+		<div class="item">
+			<img class="box-filme" src="img/swat.jpg" alt="swat" srcset="">
+		</div>
+		<div class="item">
+			<img class="box-filme" src="img/gambito.jpg" alt="Gambito da rainha" srcset="">
+		</div>
+		<div class="item">
+			<img class="box-filme" src="img/doctor.jpg" alt="The good Doctor" srcset="">
+		</div>
+		<div class="item">
+			<img class="box-filme" src="img/station.jpg" alt="Station 19" srcset="">
+		</div>
+</body>
+</html>
